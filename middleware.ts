@@ -6,6 +6,8 @@ export function middleware(request: NextRequest) {
     const hostname = request.headers.get('host') || '';
     const rootDomain = 'neochainhk.cn'; // HARDCODED for production
 
+    console.log(`[Middleware] Hostname: ${hostname}, Path: ${url.pathname}`);
+
     // 1. Skip static files and APIs
     if (
         url.pathname.startsWith('/api') ||
@@ -15,9 +17,14 @@ export function middleware(request: NextRequest) {
         return NextResponse.next();
     }
 
-    // 2. Official Site (Root or WWW)
-    if (hostname === rootDomain || hostname === `www.${rootDomain}`) {
+    // 2. Official Site (Root or WWW or Localhost)
+    if (
+        hostname === rootDomain ||
+        hostname === `www.${rootDomain}` ||
+        hostname.includes('localhost') // Relaxed for local testing
+    ) {
         url.pathname = `/official${url.pathname}`;
+        console.log(`[Middleware] Rewriting to: ${url.pathname}`);
         return NextResponse.rewrite(url);
     }
 
