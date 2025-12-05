@@ -38,20 +38,19 @@ export default function NeoChainLanding() {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-heading tracking-tight mb-6">
-                                Redefining <br />
-                                <span className="text-gradient">Industrial Supply Chain</span>
-                                <br /> with AI & 3D Digital Twins
+                                赋能中小企业 <br />
+                                <span className="text-gradient">数字化转型</span>
                             </h1>
                             <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                                Experience the future of manufacturing with NeoChain. We integrate advanced AI algorithms with immersive 3D visualization to optimize every link in your supply chain.
+                                新一代工业互联网 SaaS 平台 | 仓储管理 | 生产执行 | 全链路追溯
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                                 <Button size="lg" className="w-full sm:w-auto group">
-                                    Watch Demo
+                                    观看演示
                                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </Button>
                                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                                    Contact Sales
+                                    联系销售
                                 </Button>
                             </div>
                         </motion.div>
@@ -69,36 +68,35 @@ export default function NeoChainLanding() {
                     </motion.div>
                 </section>
 
-                {/* Features Section */}
                 <Section id="solutions" className="bg-slate-950">
                     <div className="container mx-auto px-4">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-5xl font-bold font-heading mb-4">
-                                Powered by <span className="text-gradient-purple">Next-Gen Tech</span>
+                                核心 <span className="text-gradient-purple">解决方案</span>
                             </h2>
                             <p className="text-slate-400 max-w-xl mx-auto">
-                                Our platform leverages cutting-edge technologies to deliver unparalleled visibility and control.
+                                我们的平台利用尖端技术提供无与伦比的可视化和控制能力。
                             </p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {[
                                 {
-                                    icon: Globe,
-                                    title: "Real-time Traceability",
-                                    desc: "Track every component across the global supply chain with millisecond precision using our decentralized ledger.",
+                                    icon: Box,
+                                    title: "仓储管理 (WMS)",
+                                    desc: "通过唯一数字ID管理物料，实现扫码出入库，库存实时准确。",
                                     color: "text-blue-400"
                                 },
                                 {
-                                    icon: Box,
-                                    title: "3D Immersion",
-                                    desc: "Interact with high-fidelity digital twins of your inventory and logistics network in a fully immersive 3D environment.",
+                                    icon: Cpu,
+                                    title: "生产协同 (MES)",
+                                    desc: "全流程生产进度可视化，BOM级物料消耗自动统计。",
                                     color: "text-purple-400"
                                 },
                                 {
-                                    icon: Cpu,
-                                    title: "AI Optimization",
-                                    desc: "Predict bottlenecks and automate procurement decisions with our self-learning neural networks.",
+                                    icon: Globe,
+                                    title: "全链路追溯",
+                                    desc: "从原材料到成品，一物一码，全生命周期可查询。",
                                     color: "text-cyan-400"
                                 }
                             ].map((feature, index) => (
@@ -132,11 +130,11 @@ export default function NeoChainLanding() {
                                         <div className="absolute bottom-6 left-6 right-6">
                                             <div className="flex gap-4 mb-4">
                                                 <div className="bg-slate-900/80 backdrop-blur-md p-3 rounded-lg border border-white/10 flex-1">
-                                                    <div className="text-xs text-slate-400 mb-1">Efficiency</div>
+                                                    <div className="text-xs text-slate-400 mb-1">效率提升</div>
                                                     <div className="text-lg font-bold text-green-400">+127%</div>
                                                 </div>
                                                 <div className="bg-slate-900/80 backdrop-blur-md p-3 rounded-lg border border-white/10 flex-1">
-                                                    <div className="text-xs text-slate-400 mb-1">Latency</div>
+                                                    <div className="text-xs text-slate-400 mb-1">响应延迟</div>
                                                     <div className="text-lg font-bold text-blue-400">12ms</div>
                                                 </div>
                                             </div>
@@ -148,22 +146,22 @@ export default function NeoChainLanding() {
                             <div>
                                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
                                     <ShieldCheck className="w-4 h-4" />
-                                    Enterprise Grade Security
+                                    企业级数据安全
                                 </div>
                                 <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6 leading-tight">
-                                    Trusted by Industry <br />
-                                    <span className="text-white">Leaders Worldwide</span>
+                                    深耕制造业 <br />
+                                    <span className="text-white">服务行业领军企业</span>
                                 </h2>
                                 <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-                                    NeoChain is built on a foundation of trust and transparency. Our platform is audited by top-tier security firms and compliant with international standards, ensuring your data remains sovereign and secure.
+                                    基于工业互联网标识解析体系，构建可信数据底座。我们的平台通过公安部备案，符合国家数据安全标准，确保您的企业数据安全无忧。
                                 </p>
 
                                 <div className="grid grid-cols-2 gap-6">
                                     {[
-                                        { label: "Active Nodes", value: "50k+" },
-                                        { label: "Transactions", value: "2M/s" },
-                                        { label: "Uptime", value: "99.99%" },
-                                        { label: "Partners", value: "150+" },
+                                        { label: "活跃节点", value: "50k+" },
+                                        { label: "日处理数据", value: "2M+" },
+                                        { label: "系统可用性", value: "99.99%" },
+                                        { label: "合作伙伴", value: "150+" },
                                     ].map((stat, i) => (
                                         <div key={i} className="border-l-2 border-slate-700 pl-4">
                                             <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
@@ -184,10 +182,10 @@ export default function NeoChainLanding() {
                             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519681393798-2f619f943f3c?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay" />
 
                             <div className="relative z-10 max-w-3xl mx-auto">
-                                <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">Ready to transform your supply chain?</h2>
-                                <p className="text-slate-300 mb-8 text-lg">Join the revolution of intelligent manufacturing and logistics today.</p>
+                                <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">准备好开启数字化转型了吗？</h2>
+                                <p className="text-slate-300 mb-8 text-lg">立即加入工业 4.0 的行列，提升企业核心竞争力。</p>
                                 <Button size="lg" variant="primary" className="shadow-xl shadow-blue-500/20">
-                                    Get Started Now <Zap className="ml-2 w-4 h-4" />
+                                    立即开始 <Zap className="ml-2 w-4 h-4" />
                                 </Button>
                             </div>
                         </div>
